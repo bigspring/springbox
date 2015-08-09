@@ -1,0 +1,30 @@
+{
+  "name": "springbox",
+  "version": "0.0.3",
+  "description": "A Wordpress setup tool with the Monolith Theme and a selection of plugins.",
+  "preferGlobal": true,
+  "bin": {
+    "springbox": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigspring/springbox.git"
+  },
+  "keywords": [
+    "wordpress",
+    "setup"
+  ],
+  "author": "DM Seaton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigspring/springbox/issues"
+  },
+  "homepage": "https://github.com/bigspring/springbox",
+  "dependencies": {
+    "prompt": "^0.2.14",
+    "wp-cli": "0.0.5"
+  }
+}
