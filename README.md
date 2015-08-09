@@ -16,9 +16,12 @@ No configuration at present.
 
 ###### Usage
 
-1. Create a local database.
-2. Enter the following command:
+1. Enter the following command:
 
 	`springbox -n project-name`
-3. Enter database details when prompted.
-4. Enter Wordpress details when prompted.
+2. Enter database details when prompted.
+3. Enter Wordpress details when prompted.
+
+###### Errors
+
+There's not a lot of error handling going on right now. If something goes wrong, delete database/files and try again.
