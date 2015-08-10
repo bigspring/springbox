@@ -3,23 +3,19 @@
 var prompt = require('prompt');
 
 var args = process.argv.slice(2);
-
 var projectname = args[0] || 'springbox-project'
 
 var options = {
-	name: {
-		default: projectname,
-		short: projectname.replace('-', ''),
-		title: projectname.replace('-', ' ')
-	},
-	wp: {}
+	wp: {
+		theme: "https://github.com/bigspring/monolith/archive/master.zip"
+	}
 };
 
 options.wp.plugins = [
 	"advanced-text-widget",
+	"better-wp-security",
 	"breadcrumb-navxt",
 	"bulk-page-creator",
-	"better-wp-security",
 	"cms-tree-page-view",
 	"force-regenerate-thumbnails",
 	"imsanity",
@@ -28,16 +24,18 @@ options.wp.plugins = [
 	"wordpress-seo"
 ];
 
-options.wp.themes = [
-	"https://github.com/bigspring/monolith/archive/master.zip"
-];
-
 var promptSchema = {
 	properties: {
+		projectname: {
+			description: 'Project name',
+			pattern: /^[a-zA-Z0-9\-]+$/,
+			message: 'Project name must be only letters, numbers or dashes',
+			required: true
+		},
 		db_username: {
 			description: 'Database username',
 			pattern: /^[a-zA-Z0-9\-]+$/,
-			message: 'Name must be only letters, numbers or dashes',
+			message: 'Username must be only letters, numbers or dashes',
 			required: true
 		},
 		db_password: {
@@ -47,7 +45,7 @@ var promptSchema = {
 		wp_username: {
 			description: 'Wordpress username',
 			pattern: /^[a-zA-Z0-9]+$/,
-			message: 'Name must be only letters and numbers',
+			message: 'Username must be only letters and numbers',
 			required: true
 		},
 		wp_password: {
@@ -71,6 +69,13 @@ prompt.get(
 			return false;
 		}
 		console.log('SPRINGBOX > Installing WP...');
+
+		options.name = {
+			default: res.projectname,
+			short: res.projectname.replace('-', ''),
+			title: res.projectname.replace('-', ' ')
+		}
+
 		var wp = require('./lib/wordpress.js')(res, options);
 	}
 );
