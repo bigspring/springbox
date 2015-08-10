@@ -16,6 +16,7 @@ options.wp.plugins = [
 	"better-wp-security",
 	"breadcrumb-navxt",
 	"bulk-page-creator",
+	"custom-post-type-ui",
 	"cms-tree-page-view",
 	"force-regenerate-thumbnails",
 	"imsanity",
@@ -49,7 +50,7 @@ var promptSchema = {
 			required: true
 		},
 		wp_password: {
-			description: 'Wordpress Password',
+			description: 'Wordpress password',
 			required: true
 		},
 		wp_prefix: {
@@ -68,7 +69,6 @@ prompt.get(
 			console.log(err);
 			return false;
 		}
-		console.log('SPRINGBOX > Installing WP...');
 
 		options.name = {
 			default: res.projectname,

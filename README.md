@@ -17,8 +17,9 @@ No configuration available yet.
 ###### Usage
 
 1. Move into your htdocs directory (or wherever localhost points).
-2. Enter database details when prompted.
-3. Enter Wordpress details when prompted.
+2. Run the command `springbox`
+3. Enter database details when prompted.
+4. Enter Wordpress details when prompted.
 
 ###### Errors
 
