@@ -1,5 +1,5 @@
 # springbox
-### Installs Wordpress, the Monolith theme and a selection of useful plugins. Deletes Hello Dolly and Akismet. :)
+### Installs Wordpress, the Monolith theme and a selection of useful plugins.
 ---
 ###### Requirements
 
@@ -12,8 +12,9 @@
 
 ###### Notes
 
+- Deletes default themes and plugins.
 - Currently assumes WP is to be installed locally.
-- Will print error messages but doesn't do much about the reported errors. If something goes wrong, delete the install directory and database (if they were created), and try again.
+- Will print error messages but doesn't do much about the reported errors. If something goes wrong, delete the install directory and database (if they were created), resolve any other errors and try again.
 
 ###### Configuration
 
