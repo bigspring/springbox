@@ -10,6 +10,11 @@
 
 `npm install -g springbox`
 
+###### Notes
+
+- Currently assumes WP is to be installed locally.
+- Will print error messages but doesn't do much about the reported errors. If something goes wrong, delete the install directory and database (if they were created), and try again.
+
 ###### Configuration
 
 No configuration available yet.
@@ -20,7 +25,3 @@ No configuration available yet.
 2. Run the command `springbox`
 3. Enter database details when prompted.
 4. Enter Wordpress details when prompted.
-
-###### Errors
-
-Currently there is only basic error handling. If something goes wrong, delete the install directory and database, if one was created, and try again.

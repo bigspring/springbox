@@ -1,6 +1,6 @@
 {
   "name": "springbox",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Wordpress setup tool with the Monolith Theme and a selection of plugins.",
   "preferGlobal": true,
   "bin": {
