@@ -45,7 +45,7 @@ var promptSchema = {
 		},
 		wp_username: {
 			description: 'Wordpress username',
-			pattern: /^[a-zA-Z0-9]+$/,
+			pattern: /^[a-zA-Z0-9\_]+$/,
 			message: 'Username must be only letters and numbers',
 			required: true
 		},
