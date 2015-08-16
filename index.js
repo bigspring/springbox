@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
+var colors = require('colors');
 var prompt = require('prompt');
 var promptSchema = require('./lib/prompt.schema.js');
 
@@ -28,7 +29,7 @@ prompt.get(
 	promptSchema,
 	function (err, res) {
 		if (err) {
-			console.log('SPRINGBOX > An error occurred: ');
+			console.log('SPRINGBOX > An error occurred: '.red.bgBlack);
 			console.log(err);
 			return false;
 		}

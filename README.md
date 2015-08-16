@@ -1,9 +1,7 @@
 # springbox
-### Installs Wordpress, the Monolith theme and a selection of useful plugins.
 ---
 ###### Requirements
 
-- [Node](http://www.nodejs.org)
 - [WP-CLI](http://wp-cli.org/)
 
 ###### Installation
