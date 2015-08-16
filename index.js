@@ -4,6 +4,8 @@ var colors = require('colors');
 var prompt = require('prompt');
 var promptSchema = require('./lib/prompt.schema.js');
 
+console.log('SPRINGBOX > BEGIN.'.bold.green.bgBlue);
+
 var options = {
 	wp: {
 		theme: 'https://github.com/bigspring/monolith/archive/master.zip'
