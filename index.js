@@ -14,15 +14,12 @@ var options = {
 
 options.wp.plugins = [
 	'advanced-text-widget',
-	'better-wp-security',
 	'breadcrumb-navxt',
-	'bulk-page-creator',
 	'cms-tree-page-view',
 	'custom-post-type-ui',
 	'force-regenerate-thumbnails',
 	'imsanity',
 	'widget-logic',
-	'wp-password-generator',
 	'wordpress-seo'
 ];
 
