@@ -1,6 +1,6 @@
 {
   "name": "springbox",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A Wordpress setup tool with the Monolith Theme and a selection of plugins.",
   "preferGlobal": true,
   "bin": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/bigspring/springbox",
   "dependencies": {
+    "async": "^1.4.2",
     "colors": "^1.1.2",
     "prompt": "^0.2.14",
     "wp-cli": "0.0.5"
