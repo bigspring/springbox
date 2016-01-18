@@ -19,9 +19,8 @@
 ###### Notes
 
 - Installs the [Monolith Wordpress theme](https://github.com/bigspring/monolith).
-- Deletes default themes and plugins.
-- Databases created by springbox have the prefix 'sbx_'.
-- Currently assumes WP is to be installed to a local database.
+- Deletes  plugins.
+- Database backups created by springbox use the prefix 'sbx_'.
 - Conditionally dumps a database export in the parent directory when done.
 - Will print error messages but doesn't do much about the reported errors. If something goes wrong, delete the install directory and database (if they were created), resolve any other errors and try again.
 
