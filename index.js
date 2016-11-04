@@ -8,7 +8,7 @@ console.log('SPRINGBOX > BEGIN.'.bold.green.bgBlue);
 
 var options = {
 	wp: {
-		theme: 'https://github.com/bigspring/monolith/archive/master.zip'
+		theme: 'https://github.com/bigspring/M3/archive/master.zip'
 	}
 };
 
@@ -18,6 +18,7 @@ options.wp.plugins = [
 	'cms-tree-page-view',
 	'custom-post-type-ui',
 	'force-regenerate-thumbnails',
+	'gathercontent-import',
 	'imsanity',
 	'widget-logic',
 	'wordpress-seo'
@@ -37,7 +38,7 @@ prompt.get(
 			default: res.projectname,
 			short: res.projectname.replace('-', ''),
 			title: res.projectname.replace('-', ' ')
-		}
+		};
 
 		var wp = require('./lib/wordpress.js')(res, options);
 	}
