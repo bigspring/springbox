@@ -18,7 +18,7 @@
 
 ###### Notes
 
-- Installs the [Monolith Wordpress theme](https://github.com/bigspring/monolith).
+- Installs the [Monolith Wordpress theme](https://github.com/bigspring/M3).
 - Deletes  plugins.
 - Database backups created by springbox use the prefix 'sbx_'.
 - Conditionally dumps a database export in the parent directory when done.
