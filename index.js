@@ -14,6 +14,7 @@ var options = {
 
 options.wp.plugins = [
 	'advanced-text-widget',
+	'amp',
 	'breadcrumb-navxt',
 	'cms-tree-page-view',
 	'custom-post-type-ui',
